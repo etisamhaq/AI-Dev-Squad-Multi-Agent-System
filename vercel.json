@@ -34,10 +34,6 @@
       "destination": "/public/test.html"
     }
   ],
-  "env": {
-    "GROQ_API_KEY": "@groq_api_key",
-    "CORAL_SERVER_URL": "@coral_server_url"
-  },
   "headers": [
     {
       "source": "/api/(.*)",
