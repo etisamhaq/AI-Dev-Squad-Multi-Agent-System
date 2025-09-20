@@ -7,6 +7,12 @@ A revolutionary AI-powered development platform featuring 5 specialized AI agent
 - **Chat Interface**: http://localhost:3000
 - **Agent Marketplace**: http://localhost:3000/marketplace
 
+![Alt text](https://github.com/etisamhaq/AI-Dev-Squad-Multi-Agent-System/blob/main/demo/img1.png)
+
+![Alt text](https://github.com/etisamhaq/AI-Dev-Squad-Multi-Agent-System/blob/main/demo/img2.png)
+
+![Alt text](https://github.com/etisamhaq/AI-Dev-Squad-Multi-Agent-System/blob/main/demo/img3.png)
+
 ## 🚀 Key Features
 
 ### 🎯 5 Specialized AI Agents
