@@ -1,0 +1,116 @@
+# Coral Agent Registry for AI Dev Squad Marketplace
+# This file defines all agents available in the marketplace
+
+# Frontend Developer Agent
+[[inline-agent]]
+[inline-agent.agent]
+name = "frontend-developer"
+version = "1.0.0"
+description = "Expert React/Next.js developer for modern web applications"
+
+[inline-agent.options.AGENT_TYPE]
+type = "string"
+value = "frontend"
+
+[inline-agent.options.HOURLY_RATE]
+type = "number"
+value = 75
+
+[inline-agent.runtimes.executable]
+command = ["python", "coral/agents/frontend_agent.py"]
+
+# Backend Developer Agent
+[[inline-agent]]
+[inline-agent.agent]
+name = "backend-developer"
+version = "1.0.0"
+description = "Python/Django expert for scalable backend systems"
+
+[inline-agent.options.AGENT_TYPE]
+type = "string"
+value = "backend"
+
+[inline-agent.options.HOURLY_RATE]
+type = "number"
+value = 80
+
+[inline-agent.runtimes.executable]
+command = ["python", "coral/agents/backend_agent.py"]
+
+# Security Auditor Agent
+[[inline-agent]]
+[inline-agent.agent]
+name = "security-auditor"
+version = "1.0.0"
+description = "Security expert for vulnerability assessment and secure coding"
+
+[inline-agent.options.AGENT_TYPE]
+type = "string"
+value = "security"
+
+[inline-agent.options.HOURLY_RATE]
+type = "number"
+value = 100
+
+[inline-agent.runtimes.executable]
+command = ["python", "coral/agents/security_agent.py"]
+
+# QA Tester Agent
+[[inline-agent]]
+[inline-agent.agent]
+name = "qa-tester"
+version = "1.0.0"
+description = "Automated testing expert with Selenium, Cypress, and Jest"
+
+[inline-agent.options.AGENT_TYPE]
+type = "string"
+value = "qa"
+
+[inline-agent.options.HOURLY_RATE]
+type = "number"
+value = 65
+
+[inline-agent.runtimes.executable]
+command = ["python", "coral/agents/qa_agent.py"]
+
+# DevOps Engineer Agent
+[[inline-agent]]
+[inline-agent.agent]
+name = "devops-engineer"
+version = "1.0.0"
+description = "CI/CD, Kubernetes, Docker, and cloud infrastructure expert"
+
+[inline-agent.options.AGENT_TYPE]
+type = "string"
+value = "devops"
+
+[inline-agent.options.HOURLY_RATE]
+type = "number"
+value = 90
+
+[inline-agent.runtimes.executable]
+command = ["python", "coral/agents/devops_agent.py"]
+
+# AI/ML Engineer Agent
+[[inline-agent]]
+[inline-agent.agent]
+name = "ai-ml-engineer"
+version = "1.0.0"
+description = "Machine learning and AI implementation specialist"
+
+[inline-agent.options.AGENT_TYPE]
+type = "string"
+value = "ai_ml"
+
+[inline-agent.options.HOURLY_RATE]
+type = "number"
+value = 95
+
+[inline-agent.runtimes.executable]
+command = ["python", "coral/agents/aiml_agent.py"]
+
+# Export settings for marketplace
+[export]
+allow_external_use = true
+pricing_model = "hourly"
+payment_method = "solana"

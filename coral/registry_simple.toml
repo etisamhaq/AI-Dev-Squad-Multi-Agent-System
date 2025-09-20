@@ -1,0 +1,16 @@
+# Simplified Coral Agent Registry for AI Dev Squad
+# Compatible with Coral Server's expected format
+
+[[inline-agent]]
+
+[inline-agent.agent]
+name = "frontend-developer"
+version = "1.0.0"
+description = "Expert React/Next.js developer for modern web applications"
+
+[inline-agent.options.OPENAI_API_KEY]
+type = "string"
+description = "OpenAI API Key (optional)"
+
+[inline-agent.runtimes.executable]
+command = ["python", "coral/agents/frontend_agent.py"]
