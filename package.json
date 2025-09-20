@@ -1,0 +1,14 @@
+{
+  "name": "ai-dev-squad",
+  "version": "1.0.0",
+  "description": "AI Dev Squad - Revolutionary Multi-Agent AI Development Platform",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'No build step required for static site'",
+    "dev": "python -m http.server 3000",
+    "start": "python -m http.server 3000"
+  },
+  "keywords": ["ai", "agents", "development", "coral-protocol", "groq"],
+  "author": "Your Name",
+  "license": "MIT"
+}

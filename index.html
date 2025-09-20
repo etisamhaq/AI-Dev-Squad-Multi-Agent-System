@@ -296,7 +296,7 @@
                         cursor: pointer;
                         font-weight: 600;
                         transition: all 0.3s;
-                    " onmouseover="this.style.background='rgba(255,255,255,0.3)'"
+                    " onmouseover="this.style.background='rgba(255,255,255,0.3)'" 
                        onmouseout="this.style.background='rgba(255,255,255,0.2)'">
                         🛒 Marketplace
                     </button>
@@ -309,7 +309,7 @@
                         cursor: pointer;
                         font-weight: 600;
                         transition: all 0.3s;
-                    " onmouseover="this.style.background='rgba(255,255,255,0.3)'"
+                    " onmouseover="this.style.background='rgba(255,255,255,0.3)'" 
                        onmouseout="this.style.background='rgba(255,255,255,0.2)'">
                         🗑️ Clear Chat
                     </button>
@@ -352,10 +352,10 @@
 
         <div class="input-container">
             <div class="input-wrapper">
-                <input
-                    type="text"
-                    class="message-input"
-                    id="messageInput"
+                <input 
+                    type="text" 
+                    class="message-input" 
+                    id="messageInput" 
                     placeholder="Ask anything... (e.g., 'Build a login form', 'Create an API endpoint')"
                     autofocus
                 />
@@ -384,7 +384,7 @@
                 agentButtons.forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
                 selectedAgent = btn.dataset.agent;
-
+                
                 const agentNames = {
                     'all': 'All Agents',
                     'frontend': 'Frontend Developer',
@@ -402,7 +402,7 @@
 
             isLoading = true;
             sendBtn.disabled = true;
-
+            
             // Add user message to chat
             addMessage('user', message, 'You');
             messageInput.value = '';
@@ -428,7 +428,7 @@
                 }
 
                 const data = await response.json();
-
+                
                 // Remove loading
                 removeLoadingMessage(loadingId);
 
@@ -455,30 +455,30 @@
         function addMessage(type, content, sender, isAI = false) {
             const messageDiv = document.createElement('div');
             messageDiv.className = `message ${type}`;
-
+            
             let formattedContent = content;
-
+            
             // Format code blocks if present
             if (content.includes('```')) {
                 formattedContent = content.replace(/```(\w+)?\n([\s\S]*?)```/g, (match, lang, code) => {
                     return `<div class="code-block">${escapeHtml(code.trim())}</div>`;
                 });
             }
-
+            
             messageDiv.innerHTML = `
                 ${type === 'agent' ? `<div class="message-header">${sender}${isAI ? ' (AI Generated)' : ''}</div>` : ''}
                 <div class="bubble">${formattedContent}</div>
             `;
-
+            
             // Clear empty state if it exists
             const emptyState = chatContainer.querySelector('.empty-state');
             if (emptyState) {
                 emptyState.remove();
             }
-
+            
             chatContainer.appendChild(messageDiv);
             chatContainer.scrollTop = chatContainer.scrollHeight;
-
+            
             messages.push({ type, content, sender, timestamp: new Date() });
         }
 

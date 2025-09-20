@@ -85,3 +85,4 @@ dump.rdb
 target/
 **/*.rs.bk
 Cargo.lock
+.vercel
