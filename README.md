@@ -55,7 +55,6 @@ ai-dev-squad/
 │   ├── marketplace.html         # Agent marketplace with embedded chat
 │   └── simple-server.js         # Express server
 │
-├── django-legacy/               # Legacy Django code (archived)
 └── .env                         # Configuration (API keys)
 ```
 
